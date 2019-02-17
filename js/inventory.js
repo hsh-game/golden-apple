@@ -7,8 +7,10 @@ window.addEventListener('resize', fixInventory);
 
 window.addEventListener('DOMContentLoaded', function () {
   fixInventory();
-  $('#inventory').addEventListener('click', function () {
-    const isOpen = JSON.parse(this.getAttribute('open'));
-    this.setAttribute('open', JSON.stringify(!isOpen));
+  $('#inventory .title').addEventListener('click', function () {
+    const target = this.parentNode,
+          isOpen = JSON.parse(target.getAttribute('open'));
+    target.setAttribute('open', JSON.stringify(!isOpen));
+    this.innerHTML = isOpen? "가방" : "닫기";
   });
 });

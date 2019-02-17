@@ -1,6 +1,5 @@
 #inventory {
   transition: top .5s;
-  cursor: pointer;
   position: fixed;
   top: 90vh;
   left: 5vw;
@@ -17,14 +16,43 @@
 }
 
 #inventory .title {
+  cursor: pointer;
   text-align: center;
   font-size: 1.5rem;
-  margin: 3.5vh auto;
-  margin: calc(5vh - .75rem) auto;
+  padding: 3.5vh 0;
+  padding: calc(5vh - .75rem) 0;
+  margin: 0;
   font-weight: 800;
 }
 
 #items {
-  min-height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  max-height: 60vh;
+  padding-top: 1rem;
   border-top: #323232 6px solid;
+  overflow-y: scroll;
+}
+
+#items::after {
+  content: '';
+  display: block;
+  height: 10vh;
+}
+
+#items > div {
+  padding-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+#items > div[selected="true"] {
+  background: #333;
+  color: white;
+}
+
+#items > div img {
+  width: 50%;
+  image-rendering: pixelated;
 }

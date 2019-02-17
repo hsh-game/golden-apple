@@ -16,3 +16,7 @@ canvas {
   color: #323232;
   text-align: center;
 }
+
+#make-button[open="true"] {
+  display: block;
+}
