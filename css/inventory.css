@@ -13,7 +13,7 @@
 }
 
 #inventory[open="true"] {
-  top: 30vh;
+  top: 30vh !important;
 }
 
 #inventory .title {
