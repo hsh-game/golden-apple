@@ -36,6 +36,8 @@ game.bucket.mixItems = function () {
   } else {
     //조합 실패
   }
+
+  game.updateInventory();
 }
 
 game.bucket.resetColor = function () {
