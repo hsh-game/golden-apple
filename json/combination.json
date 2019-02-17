@@ -1,9 +1,42 @@
 [
   {
     "in": "seed",
-    "out": ["banana", "grape"],
-  }, {
+    "out": ["banana", "grape"]
+  },
+  {
     "in": ["banana", "grape"],
     "out": "eggplant"
+  },
+  {
+    "in": ["banana", "grape", "seed"],
+    "out": "mandarin_orange"
+  },
+  {
+    "in": ["grape", "seed"],
+    "out": "blueberry"
+  },
+  {
+    "in": ["blueberry", "grape"],
+    "out": "kyoho"
+  },
+  {
+    "in": ["kyoho", "mandarin_orange", "seed"],
+    "out": "strawberry"
+  },
+  {
+    "in": ["strawberry", "grape"],
+    "out": "prunus_avium"
+  },
+  {
+    "in": ["kyoho", "strawberry", "prunus_avium", "grape"],
+    "out": "rubus_coreanus"
+  },
+  {
+    "in": ["seed", "grape", "prunus_avium"],
+    "out": "arachis_hypogaea"
+  },
+  {
+    "in": ["mandarin_orange", "kyoho", "grape"],
+    "out": "citullus_lanatus"
   }
 ]
