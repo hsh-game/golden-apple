@@ -38,5 +38,129 @@
   {
     "in": ["mandarin_orange", "kyoho", "grape"],
     "out": "citullus_lanatus"
+  },
+  {
+    "in": ["prunus_avium", "mandarin_orange"],
+    "out": "tomato"
+  },
+  {
+    "in": ["mandarin_orange", "citullus_lanatus"],
+    "out": "pear"
+  },
+  {
+    "in": ["pear", "mandarin_orange", "banana"],
+    "out": "dekopon"
+  },
+  {
+    "in": ["strawberry", "seed"],
+    "out": "raspberry"
+  },
+  {
+    "in": ["grape", "kyoho", "rubus_coreanus", "blueberry"],
+    "out": "blackberry"
+  },
+  {
+    "in": ["mandarin_orange", "kyoho"],
+    "out": "prunus_mume"
+  },
+  {
+    "in": ["pear", "mandarin_orange", "strawberry"],
+    "out": "peach"
+  },
+  {
+    "in": ["grape", "strawberry", "pear"],
+    "out": "pig_tree"
+  },
+  {
+    "in": ["pear", "arachis_hypogaea"],
+    "out": "apricot"
+  },
+  {
+    "in": ["prunus_avium", "raspberry"],
+    "out": "manchu_cherry"
+  },
+  {
+    "in": ["banana", "citullus_lanatus"],
+    "out": "cucumber"
+  },
+  {
+    "in": ["cucumber", "raspberry", "banana"],
+    "out": "bitter_melon"
+  },
+  {
+    "in": ["tomato", "prunus_mume", "apricot"],
+    "out": "plum"
+  },
+  {
+    "in": ["peach", "pear", "kyoho"],
+    "out": "shaved_peach"
+  },
+  {
+    "in": ["prunus_avium", "raspberry", "blueberry"],
+    "out": "cherry"
+  },
+  {
+    "in": ["tomato", "apricot"],
+    "out": "persimmon"
+  },
+  {
+    "in": ["pig_tree", "persimmon", "citullus_lanatus"],
+    "out": "kiwiberry"
+  },
+  {
+    "in": ["prunus_mume", "strawberry"],
+    "out": "date"
+  },
+  {
+    "in": ["grape", "blackberry", "prunus_avium", "cherry"],
+    "out": "wild_grape"
+  },
+  {
+    "in": ["pear", "prunus_mume", "apricot"],
+    "out": "quince"
+  },
+  {
+    "in": ["tomato", "raspberry"],
+    "out": "pomegranate"
+  },
+  {
+    "in": ["quince", "blueberry", "persimmon"],
+    "out": "akebia"
+  },
+  {
+    "in": ["mandarin_orange", "apricot", "persimmon"],
+    "out": "gold_orange"
+  },
+  {
+    "in": ["mandarin_orange", "cucumber"],
+    "out": "lime"
+  },
+  {
+    "in": ["persimmon", "mandarin_orange", "lime"],
+    "out": "lemon"
+  },
+  {
+    "in": ["persimmon", "lime", "pear"],
+    "out": "maxima"
+  },
+  {
+    "in": ["mandarin_orange", "persimmon", "plum", "lemon"],
+    "out": "orange"
+  },
+  {
+    "in": ["orange", "seed", "mandarin_orange"],
+    "out": "juno"
+  },
+  {
+    "in": ["orange", "mandarin_orange", "strawberry"],
+    "out": "jamong"
+  },
+  {
+    "in": ["mandarin_orange", "cucumber", "persimmon"],
+    "out": "sudachi"
+  },
+  {
+    "in": ["plum", "grape"],
+    "out": "guarana"
   }
 ]
