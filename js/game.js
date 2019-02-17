@@ -49,6 +49,7 @@ game.user.give = function (itemName) {
           .getItem(itemName)
           .then(function (item) {
             game.user.inventory.push(item);
+            game.user.inventory = game.user.inventory.primary();
           });
 }
 
