@@ -1,0 +1,9 @@
+[
+  {
+    "in": "seed",
+    "out": ["banana", "grape"],
+  }, {
+    "in": ["banana", "grape"],
+    "out": "eggplant"
+  }
+]

@@ -1,0 +1,18 @@
+canvas {
+  width: 100%;
+}
+
+#make-button {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 60%;
+  max-width: 300px;
+  margin: -12.5vh auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  background: #21e429;
+  color: #323232;
+  text-align: center;
+}

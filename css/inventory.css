@@ -1,0 +1,30 @@
+#inventory {
+  transition: top .5s;
+  cursor: pointer;
+  position: fixed;
+  top: 90vh;
+  left: 5vw;
+  width: 90vw;
+  max-width: 550px;
+  min-height: 100vh;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: #c7c7c7;
+}
+
+#inventory[open="true"] {
+  top: 30vh;
+}
+
+#inventory .title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3.5vh auto;
+  margin: calc(5vh - .75rem) auto;
+  font-weight: 800;
+}
+
+#items {
+  min-height: 30vh;
+  border-top: #323232 6px solid;
+}
