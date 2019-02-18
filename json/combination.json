@@ -1,138 +1,138 @@
 [
   {
-    "in": "1",
-    "out": ["2", "3"]
+    "in": "seed",
+    "out": ["banana", "fodo"]
   },
   {
-    "in": ["3", "1"],
-    "out": "4"
+    "in": ["fodo", "seed"],
+    "out": "blueberry"
   },
   {
-    "in": ["3", "2"],
-    "out": "5"
+    "in": ["fodo", "banana"],
+    "out": "gazi"
   },
   {
-    "in": ["3", "5", "1"],
-    "out": "6"
+    "in": ["fodo", "gazi", "seed"],
+    "out": "gurbong"
   },
   {
-    "in": ["3", "6"],
-    "out": "7"
+    "in": ["fodo", "gurbong"],
+    "out": "bokbunja"
   },
   {
-    "in": ["3", "6", "1"],
-    "out": "8"
+    "in": ["fodo", "gurbong", "seed"],
+    "out": "murlu"
   },
   {
-    "in": ["6", "5"],
-    "out": "9"
+    "in": ["gurbong", "gazi"],
+    "out": "jadu"
   },
   {
-    "in": ["3", "1", "9"],
-    "out": "10"
+    "in": ["fodo", "seed", "jadu"],
+    "out": "mandarin"
   },
   {
-    "in": ["10", "6", "9"],
-    "out": "11"
+    "in": ["mandarin", "gurbong", "jadu"],
+    "out": "hanlabong"
   },
   {
-    "in": ["10", "9", "1"],
-    "out": "12"
+    "in": ["mandarin", "jadu", "seed"],
+    "out": "salgu"
   },
   {
-    "in": ["9", "11"],
-    "out": "13"
+    "in": ["jadu", "hanlabong"],
+    "out": "jamong"
   },
   {
-    "in": ["13", "10", "1"],
-    "out": "14"
+    "in": ["jamong", "mandarin", "seed"],
+    "out": "youja"
   },
   {
-    "in": ["2", "5"],
-    "out": "15"
+    "in": ["banana", "gazi"],
+    "out": "oe"
   },
   {
-    "in": ["15", "9"],
-    "out": "16"
+    "in": ["oe", "jadu"],
+    "out": "maesil"
   },
   {
-    "in": ["14", "15"],
-    "out": "17"
+    "in": ["youja", "oe"],
+    "out": "lime"
   },
   {
-    "in": ["10", "14", "11", "12"],
-    "out": "18"
+    "in": ["mandarin", "youja", "hanlabong", "salgu"],
+    "out": "orange"
   },
   {
-    "in": ["2", "3", "1"],
-    "out": "19"
+    "in": ["banana", "fodo", "seed"],
+    "out": "strawberry"
   },
   {
-    "in": ["16", "19"],
-    "out": "20"
+    "in": ["maesil", "strawberry"],
+    "out": "daechu"
   },
   {
-    "in": ["16", "19", "2"],
-    "out": "21"
+    "in": ["maesil", "strawberry", "banana"],
+    "out": "muhwagwa"
   },
   {
-    "in": ["2", "3", "1", "20"],
-    "out": "22"
+    "in": ["banana", "fodo", "seed", "daechu"],
+    "out": "sanstrawberry"
   },
   {
-    "in": ["19", "22"],
-    "out": "23"
+    "in": ["strawberry", "sanstrawberry"],
+    "out": "verzzi"
   },
   {
-    "in": ["19", "22", "23"],
-    "out": "24"
+    "in": ["strawberry", "sanstrawberry", "verzzi"],
+    "out": "cherry"
   },
   {
-    "in": ["19", "13", "10"],
-    "out": "25"
+    "in": ["strawberry", "jamong", "mandarin"],
+    "out": "tomato"
   },
   {
-    "in": ["9", "11", "15"],
-    "out": "26"
+    "in": ["jadu", "hanlabong", "oe"],
+    "out": "suback"
   },
   {
-    "in": ["23", "14", "12", "1"],
-    "out": "27"
+    "in": ["verzzi", "youja", "salgu", "seed"],
+    "out": "suckryu"
   },
   {
-    "in": ["12", "26"],
-    "out": "28"
+    "in": ["salgu", "suback"],
+    "out": "bae"
   },
   {
-    "in": ["18", "19", "9"],
-    "out": "29"
+    "in": ["orange", "strawberry", "jadu"],
+    "out": "peach"
   },
   {
-    "in": ["23", "24", "20"],
-    "out": "30"
+    "in": ["verzzi", "cherry", "daechu"],
+    "out": "angdu"
   },
   {
-    "in": ["17", "18", "2"],
-    "out": "31"
+    "in": ["lime", "orange", "banana"],
+    "out": "lemon"
   },
   {
-    "in": ["10", "14", "13", "12", "1"],
-    "out": "32"
+    "in": ["mandarin", "youja", "jamong", "salgu", "seed"],
+    "out": "gold-orange"
   },
   {
-    "in": ["4", "7", "8", "3"],
-    "out": "33"
+    "in": ["blueberry", "bokbunja", "murlu", "fodo"],
+    "out": "blackberry"
   },
   {
-    "in": ["33", "32", "1"],
-    "out": "34"
+    "in": ["blackberry", "gold-orange", "seed"],
+    "out": "ddangkong"
   },
   {
-    "in": ["1", "12", "28"],
-    "out": "35"
+    "in": ["seed", "salgu", "bae"],
+    "out": "gam"
   },
   {
-    "in": ["1", "29", "20", "21"],
-    "out": "36"
+    "in": ["seed", "peach", "daechu", "muhwagwa"],
+    "out": "sendopeach"
   }
 ]
