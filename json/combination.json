@@ -134,5 +134,53 @@
   {
     "in": ["seed", "peach", "daechu", "muhwagwa"],
     "out": "sendopeach"
+  },
+  {
+    "in": ["banana", "bae", "cherry", "orange"],
+    "out": "pineapple"
+  },
+  {
+    "in": ["muhwagwa", "suback", "seed"],
+    "out": "abokado"
+  },
+  {
+    "in": ["banana", "mandarin", "pineapple"],
+    "out": "durian"
+  },
+  {
+    "in": ["pineapple", "durian"],
+    "out": "kiwi"
+  },
+  {
+    "in": ["seed", "ddangkong"],
+    "out": "youlmu"
+  },
+  {
+    "in": ["abokado", "seed", "orange"],
+    "out": "backhyanggwa"
+  },
+  {
+    "in": ["jadu", "ddangkong"],
+    "out": "bam"
+  },
+  {
+    "in": ["gold-orange", "jadu", "banana", "seed", "sendopeach", "backhyanggwa"],
+    "out": "apple"
+  },
+  {
+    "in": ["pineapple", "banana", "peach", "bae"],
+    "out": "coconut"
+  },
+  {
+    "in": ["abokado", "durian", "coconut"],
+    "out": "coffee"
+  },
+  {
+    "in": ["apple", "seed"],
+    "out": "gochu"
+  },
+  {
+    "in": ["apple", "gochu", "coconut", "youlmu", "seed", "banana", "suckryu", "peach", "lemon", "cherry", "durian", "hanlabong"],
+    "out": "goldapple"
   }
 ]
