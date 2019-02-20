@@ -3,8 +3,8 @@
   position: fixed;
   width: 80%;
   padding: 1rem 0;
-  background: white;
-  border: 3px solid #323232;
+  border-radius: 1rem;
+  background: #dcdcdc;
   text-align: center;
 }
 
