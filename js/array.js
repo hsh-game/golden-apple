@@ -35,16 +35,9 @@
     return returnArr;
   }
 
-  arrProto.apart = function (elemLength) {
-    let result = Array(Math.floor(this.length / elemLength) + 1)
-                 .fill().map(function () {
-                   return [];
-                 });
-    this.forEach(function (elem, idx) {
-      result[Math.floor(idx / elemLength)].push(elem);
-    });
-    return result.filter(function (arr) {
-      return arr.length;
-    });
+
+  arrProto.random = function (key) {
+    key = key || Math.floor(Math.random() * Number.MAX_SAFE_INTEGER);
+    return this[key % this.length];
   }
 })(Array, Array.prototype, []);

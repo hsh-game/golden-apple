@@ -7,25 +7,38 @@
     <title>골든 애플!</title>
 
     <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/inventory.css">
+    <link rel="stylesheet" href="css/bucket.css">
+    <link rel="stylesheet" href="css/item-window.css">
     <link rel="stylesheet" href="css/canvas.css">
 
     <script src="/assets/js/query.min.js"></script>
+    <script src="js/promise.js"></script>
     <script src="js/image.js"></script>
     <script src="js/array.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/inventory.js"></script>
     <script src="js/game.js"></script>
     <script src="js/bucket.js"></script>
+    <script src="js/animation.js"></script>
   </head>
   <body>
     <div id="background">
-      <canvas id="display" width="2500" height="2500"></canvas>
+      <img id="display" src="img/bucket.png">
       <div id="make-button">제작!</div>
       <div id="inventory" open="0">
         <p class="title">가방</p>
-        <div id="items"></div>
+        <div id="inventory-scroll-area">
+          <div id="items"></div>
+        </div>
       </div>
+    </div>
+    <div id="item-window">
+      <p id="item-msg"></p>
+      <div id="item-image"></div>
+      <a onclick="$('#item-window').style.display='none'"
+         class="button">확인</a>
     </div>
   </body>
 </html>

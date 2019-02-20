@@ -1,0 +1,5 @@
+#display {
+  transition: transform .45s;
+  position: absolute;
+  image-rendering: pixelated;
+}

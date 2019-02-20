@@ -5,11 +5,9 @@ canvas {
 #make-button {
   display: none;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   width: 60%;
-  max-width: 300px;
-  margin: -12.5vh auto;
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 1rem;
   font-size: 1.5rem;
   background: #21e429;

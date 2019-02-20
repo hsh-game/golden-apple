@@ -8,7 +8,18 @@ game.bucket.resetItems = function () {
 }
 
 game.bucket.insertItem = function (itemName) {
-  return game.bucket.items.push(itemName);
+  let items, combi;
+
+  game.bucket.items.push(itemName);
+
+  items = game.bucket.items.sort();
+  combi = game.findCombination(items);
+
+  if (combi) {
+    if (!Array.isArray(combi))
+      combi = [combi];
+    combi.forEach(game.getItem);
+  }
 }
 
 game.bucket.removeItems = function (itemName) {
@@ -17,8 +28,10 @@ game.bucket.removeItems = function (itemName) {
     game.bucket.items.splice(index, 1);
 }
 
+let elemSelector = 1;
 game.bucket.mixItems = function () {
-  const items = game.bucket.items.sort();
+  const items = game.bucket.items.sort(),
+        proms = [];
   let combi;
   if (!game.isReady) return;
   combi = game.findCombination(items);
@@ -26,18 +39,22 @@ game.bucket.mixItems = function () {
   $('#make-button').setAttribute('open', 0);
 
   if (combi) {
-    if (Array.isArray(combi)) {
-      let key = Math.floor(combi.length * Math.random());
-      combi = combi[key];
-    }
-    game.user
-      .give(combi)
-      .then(game.updateInventory);
-  } else {
-    //조합 실패
+    if (Array.isArray(combi))
+      combi = combi.random(elemSelector++);
+    proms.push(game.user.give(combi));
   }
 
-  game.updateInventory();
+  proms.push(game.animation.shakeBucket());
+
+  Promise
+    .all(proms)
+    .then(function (results) {
+      if (combi)
+        game.animation.getItem(combi);
+      else
+        game.animation.bucketFail();
+    })
+    .then(game.updateInventory);
 }
 
 game.bucket.resetColor = function () {
@@ -49,32 +66,23 @@ game.bucket.onresize = function () {
         top = (innerHeight - width) / 2,
         left = (innerWidth - width) / 2;
 
-  Object.assign($('#display').style, {
-    width: Math.floor(width) + 'px',
-    marginTop: Math.floor(top) + 'px',
-    marginLeft: Math.floor(left) + 'px'
+  $$('#display, #item-window').forEach(function (target) {
+    Object.assign(target.style, {
+      width: Math.floor(width) + 'px',
+      top: Math.floor(top) + 'px',
+      left: Math.floor(left) + 'px'
+    });
   });
-};
 
-game.bucket.drawBucket = function () {
-  const canvas = $('#display'),
-        ctx = canvas.getContext('2d'),
-        width = canvas.width,
-        height = canvas.height;
-
-  ctx.fillStyle = 'rgb(' + game.bucket.color.join(',') + ')';
-
-  ctx.beginPath();
-  ctx.moveTo(width * (13/100), 0);
-  ctx.lineTo(width * (87/100), 0);
-  ctx.lineTo(width * (69/100), height);
-  ctx.lineTo(width * (31/100), height);
-  ctx.fill();
+  Object.assign($('#make-button').style, {
+    width: Math.floor(width) + 'px',
+    top: Math.floor(top + width) + 'px',
+    left: Math.floor(left) + 'px'
+  });
 };
 
 window.addEventListener('DOMContentLoaded', function () {
   game.bucket.onresize();
-  game.bucket.drawBucket();
   $('#make-button').addEventListener('click',game.bucket.mixItems);
 });
 window.addEventListener('resize', game.bucket.onresize);

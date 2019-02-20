@@ -1,0 +1,11 @@
+.button {
+  cursor: pointer;
+  width: 90%;
+  display: block;
+  padding: .5rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  background: #dcdcdc;
+  text-align: center;
+  font-size: 1.25rem;
+}

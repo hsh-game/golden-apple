@@ -25,20 +25,18 @@
   font-weight: 800;
 }
 
+#inventory-scroll-area {
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
 #items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  max-height: 60vh;
   padding-top: 1rem;
+  margin-bottom: 15vh;
   border-top: #323232 6px solid;
-  overflow-y: scroll;
-}
-
-#items::after {
-  content: '';
-  display: block;
-  height: 10vh;
 }
 
 #items > div {

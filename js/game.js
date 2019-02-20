@@ -30,6 +30,7 @@ game.findCombination = function (key) {
 }
 
 game.getItem = function (itemName) {
+  let data;
   return game.itemSave[itemName] =
     game.itemSave[itemName] || ajax.fetchJSON(
       'json/item/' + itemName + '.json'
@@ -69,7 +70,7 @@ game.itemClickEvent = function () {
     game.bucket.insertItem(itemCode);
 
   this.setAttribute('selected', !selected);
-  $('#make-button').setAttribute('open', !selected);
+  $('#make-button').setAttribute('open', !!game.bucket.items.length);
 
   if (!this.parentNode.querySelector('.item:not([selected="true"])'))
     $('#inventory .title').click();
