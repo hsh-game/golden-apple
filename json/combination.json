@@ -1,11 +1,15 @@
 [
   {
     "in": "seed",
-    "out": ["banana", "fodo"]
+    "out": ["fodo"]
   },
   {
     "in": ["fodo", "seed"],
     "out": "blueberry"
+  },
+  {
+    "in": ["fodo", "blueberry", "seed"],
+    "out": "banana"
   },
   {
     "in": ["fodo", "banana"],
